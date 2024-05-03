@@ -1,4 +1,6 @@
-insert into productos (name, price, created_at) values ('estereo', 100.00, NOW());
-insert into productos (name, price, created_at) values ('TV', 400.00, NOW());
-insert into productos (name, price, created_at) values ('LAPTOP', 1500.00, NOW());
-insert into productos (name, price, created_at) values ('Estufa', 300.00, NOW());
+insert into product (name, email, anos, created_at) values ('Jorge','Jorge@gmail.com',11, NOW());
+insert into product (name, email, anos, created_at) values ('Marco','Marco@gmail.com',22, NOW());
+insert into subject (name, professorname) values ('Jorge', 'Marco Tulio');
+insert into subject (name, professorname) values ('Marco', 'XDf');
+insert into subjectassignment (subjectid, studentid, created_at) values (1,2,NOW());
+insert into subjectassignment (subjectid, studentid, created_at) values (5,6,NOW());

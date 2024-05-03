@@ -9,13 +9,12 @@ import java.util.List;
 
 //paso 5 <controlador>
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/student")
 public class ProductController {
 
     @Autowired
     ProductServices productServices;
 
-    //OBTENER TODO EL CONTENIDO
     @GetMapping
     public List<Product> GetAll(){
         return productServices.findAll();

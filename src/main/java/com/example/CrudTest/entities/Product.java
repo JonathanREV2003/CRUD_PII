@@ -7,13 +7,14 @@ import java.util.Date;
 
 //Paso 1
 @Entity
-@Table(name = "productos")//nombre dela tabla en base de datos sql
+@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)//autoincremental
     private Long id;
     private String name;
-    private Double price;
+    private String email;
+    private Integer anos;
 
     @Column(name ="created_at")
     @Temporal(TemporalType.DATE) //espesificar q es tipo fecha
@@ -37,12 +38,12 @@ public class Product {
         this.name = name;
     }
 
-    public Double getPrice() {
-        return price;
+    public Integer getAnos() {
+        return anos;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setAnos(Integer anos) {
+        this.anos = anos;
     }
 
     public Date getCreatedAt() {
@@ -51,5 +52,13 @@ public class Product {
 
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
