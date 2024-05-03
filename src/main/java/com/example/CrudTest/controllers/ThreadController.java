@@ -46,7 +46,6 @@ public class ThreadController {
 
         return content.toString();
     }
-
     @PostMapping("/no-thread")
     public String no_thread(){
         List<String> urls = new ArrayList<>();
@@ -63,7 +62,6 @@ public class ThreadController {
         }
         return outputs.get(0);
     }
-
     @PostMapping("/with-threads")
     public String withThreads(){
         List<String> urls = new ArrayList<>();
